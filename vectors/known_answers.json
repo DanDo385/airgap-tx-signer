@@ -1,0 +1,69 @@
+{
+  "note": "THROW AWAY DEMO KEY ONLY. Never fund this key on mainnet.",
+  "private_key": "0x0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+  "public_key_uncompressed": "0x044646ae5047316b4230d0086c8acec687f00b1cd9d1dc634f6cb358ac0a9a8ffffe77b4dd0a4bfb95851f3b7355c781dd60f8418fc8a65d14907aff47c903a559",
+  "address": "0xFCAd0B19bB29D4674531d6f115237E16AfCE377c",
+  "keccak_vectors": [
+    {
+      "name": "kat1",
+      "input_hex": "0x6169726761702d74782d7369676e65722d6b61742d31",
+      "digest": "0xc78397e9546898fac6041153b4faa17fe761038472789d930fe612d9882671d3"
+    },
+    {
+      "name": "deadbeef",
+      "input_hex": "0xdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeef",
+      "digest": "0x86c47f76ff4a6cb8ee9c172982eda47e895262b5a6a7582aaf7d97295ce1d8d4"
+    },
+    {
+      "name": "empty",
+      "input_hex": "0x",
+      "digest": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+    }
+  ],
+  "ecdsa_vectors": [
+    {
+      "digest": "0xc78397e9546898fac6041153b4faa17fe761038472789d930fe612d9882671d3",
+      "r": "0xcc8b0093b417d2737c2dff6baa476fe8049f8942876da8f358741a1aa182b871",
+      "s": "0x2460256931309740b626e4a4665632dd5905676e1cb8d07257a24579e8470f18",
+      "v": 27,
+      "recid": 0,
+      "signature_rsv": "0xcc8b0093b417d2737c2dff6baa476fe8049f8942876da8f358741a1aa182b8712460256931309740b626e4a4665632dd5905676e1cb8d07257a24579e8470f181b",
+      "recovered_address": "0xFCAd0B19bB29D4674531d6f115237E16AfCE377c"
+    },
+    {
+      "digest": "0x86c47f76ff4a6cb8ee9c172982eda47e895262b5a6a7582aaf7d97295ce1d8d4",
+      "r": "0x5c22fbff7c0871473fce52b983bc79d9bb951cddbb2cb67dd6ce0949ef7707d5",
+      "s": "0x244c23bb5336c1c96514ce4a06b9ae74694e6cc914fd1b107ffac665e765e3ac",
+      "v": 28,
+      "recid": 1,
+      "signature_rsv": "0x5c22fbff7c0871473fce52b983bc79d9bb951cddbb2cb67dd6ce0949ef7707d5244c23bb5336c1c96514ce4a06b9ae74694e6cc914fd1b107ffac665e765e3ac1c",
+      "recovered_address": "0xFCAd0B19bB29D4674531d6f115237E16AfCE377c"
+    },
+    {
+      "digest": "0x131cc2f1a15075bc04f36579c54b9e1a60252b705defcf5d4c2b9e36aed05caa",
+      "r": "0xf8634e1b734505249b3dabb8db8e488dd97b32de05505b5e4c422853fe68f632",
+      "s": "0x4970bbc5abf11a8e424155b1bbe0171e6f0fa5686e95ae26eea4b32fbcd86640",
+      "v": 27,
+      "recid": 0,
+      "signature_rsv": "0xf8634e1b734505249b3dabb8db8e488dd97b32de05505b5e4c422853fe68f6324970bbc5abf11a8e424155b1bbe0171e6f0fa5686e95ae26eea4b32fbcd866401b",
+      "recovered_address": "0xFCAd0B19bB29D4674531d6f115237E16AfCE377c"
+    }
+  ],
+  "legacy_sepolia_tx": {
+    "tx": {
+      "nonce": 0,
+      "gasPrice": 1000000000,
+      "gas": 21000,
+      "to": "0x1111111111111111111111111111111111111111",
+      "value": 1,
+      "data": "0x",
+      "chainId": 11155111
+    },
+    "signing_hash": "0x131cc2f1a15075bc04f36579c54b9e1a60252b705defcf5d4c2b9e36aed05caa",
+    "raw_transaction": "0xf86780843b9aca0082520894111111111111111111111111111111111111111101808401546d71a0f8634e1b734505249b3dabb8db8e488dd97b32de05505b5e4c422853fe68f632a04970bbc5abf11a8e424155b1bbe0171e6f0fa5686e95ae26eea4b32fbcd86640",
+    "r": "0xf8634e1b734505249b3dabb8db8e488dd97b32de05505b5e4c422853fe68f632",
+    "s": "0x4970bbc5abf11a8e424155b1bbe0171e6f0fa5686e95ae26eea4b32fbcd86640",
+    "v": 22310257,
+    "recovered_address": "0xFCAd0B19bB29D4674531d6f115237E16AfCE377c"
+  }
+}
