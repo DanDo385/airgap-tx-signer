@@ -31,12 +31,18 @@ Install Pico SDK (macOS):
 6. `SIGN` requires Confirm; Cancel returns `ERR denied`
 7. Host `cli.py serial` end-to-end on Sepolia
 
-## Wiring sketch (tentative)
-- LCD I2C: SDA=GP4, SCL=GP5, VCC=3V3, GND=GND (adjust if backpack differs)
-- Confirm button: GP14 to GND (internal pull-up)
-- Cancel button: GP15 to GND (internal pull-up)
+## Wiring plan (LA045 tutorial reference)
+- LCD1602 I2C: SDA=GP0, SCL=GP1, VCC=3V3, GND=GND
+- LCD address: start with `0x27`; run an I2C scan before relying on it
+- Confirm button: GP14 to GND (internal pull-up, active low)
+- Cancel button: GP15 to GND (internal pull-up, active low)
 
-Document actual pins in firmware README when wired.
+The official [LA045 tutorial archive](https://www.dropbox.com/scl/fo/ynihrh5p4qcsh5mief1en/h?dl=0&rlkey=v442lp2b2dvcct0bhmk0idlgb)
+contains a MicroPython LCD helper that uses I2C0 on GP0/GP1 and address `0x27`.
+The archive also contains Arduino examples, which are a hardware reference only: this
+project uses the Pico C SDK and does not flash the bundled third-party UF2 images.
+
+Document the physically verified pins and address in the firmware README when wired.
 
 ## Done definition for first hardware night
 - [ ] Serial PING/PONG works
